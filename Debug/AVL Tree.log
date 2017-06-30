@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\aiden\documents\projects\c++\avl tree\avl tree\main.cpp(57): warning C4244: 'initializing': conversion from 'time_t' to 'int', possible loss of data
+c:\users\aiden\documents\projects\c++\avl tree\avl tree\avltree.h(104): warning C4715: 'Tree::AVLTree<int>::Search': not all control paths return a value
+  AVL Tree.vcxproj -> C:\Users\Aiden\Documents\Projects\C++\AVL Tree\Debug\AVL Tree.exe
