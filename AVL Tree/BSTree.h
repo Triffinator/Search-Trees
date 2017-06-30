@@ -7,21 +7,21 @@ namespace Tree
     template <class T>
     class BSTree
     {
-        public:
-            BSTree();
-            BSTree(T * data);
+    public:
+        BSTree();
+        BSTree(T * data);
 
-            ~BSTree();
-            Tree::Node<T> * GetRoot();
+        ~BSTree();
+        Tree::Node<T> * GetRoot();
 
-            void Insert(T * data);
-            Tree::Node<T> * Search(T * key);
+        void Insert(T * data);
+        Tree::Node<T> * Search(T * key);
 
-        private:
-            
-            void Insert(T * data, Node<T> * node);
-            Tree::Node<T> * Search(T* key, Node<T> * node);
-            Node<T> * m_root;        
+    private:
+
+        void Insert(T * data, Node<T> * node);
+        Tree::Node<T> * Search(T* key, Node<T> * node);
+        Node<T> * m_root;
     };
 }
 
@@ -40,6 +40,7 @@ inline Tree::BSTree<T>::BSTree(T * data)
 template<class T>
 inline Tree::BSTree<T>::~BSTree()
 {
+    m_root->Destroy();
     delete m_root;
 }
 
@@ -94,11 +95,16 @@ inline Tree::Node<T> * Tree::BSTree<T>::Search(T * key, Node<T> * node)
         {
             return Search(key, node->GetLeft());
         }
-        
-        if(*key > node->GetData())
+
+        if (*key > node->GetData())
         {
             return Search(key, node->GetRight());
         }
+
+        return nullptr;
     }
-    else return nullptr;
+    else
+    {
+        return nullptr;
+    }
 }

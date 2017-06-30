@@ -24,6 +24,8 @@ namespace Tree
         protected:
             void Insert(T * data, Node<T> * node);
 
+            void Destroy();
+
             Node<T> * m_right;
             Node<T> * m_left;
 
@@ -57,10 +59,7 @@ inline Tree::Node<T>::Node(T * data)
 
 template <class T>
 inline Tree::Node<T>::~Node()
-{
-    delete m_left;
-    delete m_right;
-}
+{}
 
 template <class T>
 inline void Tree::Node<T>::Insert(T * data)
@@ -144,6 +143,22 @@ inline void Tree::Node<T>::Insert(T * data, Node<T> * node)
 
         return;
     }
+}
+
+template<class T>
+inline void Tree::Node<T>::Destroy()
+{
+    if(m_left != nullptr)
+    {
+        m_left->Destroy();
+        delete(m_left);
+    }
+
+    if(m_right != nullptr)
+    {
+        m_right->Destroy();
+        delete(m_right);
+    }    
 }
 
 template<class T>

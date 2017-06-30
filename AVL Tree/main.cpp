@@ -9,7 +9,7 @@
 template <class T>
 void Search(Tree::AVLTree<T> * avl, T * attempt)
 {
-    std::cout << "Value searched: " << *attempt << "\n" << std::endl;
+    std::cout << "\nValue searched: " << *attempt << "\n" << std::endl;
 
     Tree::Node<T> * node = avl->Search(attempt);
     if (node != nullptr)
@@ -32,7 +32,7 @@ Tree::AVLTree<T> * Populate(Tree::AVLTree<T> * avl)
     {
         a[i] = new int;
         *a[i] = rand() % 1000 + 1;
-        std::cout << *a[i] << "\n" << std::endl;
+        std::cout << *a[i] << std::endl;
         avl->Insert(a[i]);
     }
 
@@ -53,12 +53,12 @@ int main(int argc, char ** argv)
 { 
     Tree::AVLTree<int> * avl = new Tree::AVLTree<int>();
 
-    //int seed = 0;
-    int seed = time(NULL);
+    int seed = 0;
+    //int seed = time(NULL);
     avl = Populate(avl, seed);
 
-    //int attempt = 10001;
-    int attempt = 856;
+    //int attempt = 10001; //Outside possible bounds. Will never be found
+    int attempt = 856;//5th value inserted into tree
     Search(avl, &attempt);
 
     int pause;

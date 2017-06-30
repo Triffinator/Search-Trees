@@ -40,6 +40,7 @@ inline Tree::AVLTree<T>::AVLTree(T * data)
 template<class T>
 inline Tree::AVLTree<T>::~AVLTree()
 {
+    m_root->Destroy();
     delete m_root;
 }
 
@@ -99,6 +100,11 @@ inline Tree::Node<T> * Tree::AVLTree<T>::Search(T * key, Node<T> * node)
         {
             return Search(key, node->GetRight());
         }
+
+        return nullptr;
     }
-    else return nullptr;
+    else
+    { 
+        return nullptr;
+    }
 }
