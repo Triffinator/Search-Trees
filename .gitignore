@@ -1,16 +1,43 @@
 /.vs/AVL Tree/v14/.suo
-/AVL Tree/x64/Debug/AVL Tree.log
-/AVL Tree/x64/Debug/AVL Tree.tlog/AVL Tree.lastbuildstate
-/AVL Tree/x64/Debug/AVL Tree.tlog/CL.command.1.tlog
-/AVL Tree/x64/Debug/AVL Tree.tlog/CL.read.1.tlog
-/AVL Tree/x64/Debug/AVL Tree.tlog/CL.write.1.tlog
-/AVL Tree/x64/Debug/AVL Tree.tlog/link.command.1.tlog
-/AVL Tree/x64/Debug/AVL Tree.tlog/link.read.1.tlog
-/AVL Tree/x64/Debug/AVL Tree.tlog/link.write.1.tlog
-/AVL Tree/x64/Debug/main.obj
-/AVL Tree/x64/Debug/main.obj.enc
-/AVL Tree/x64/Debug/vc140.idb
-/AVL Tree/x64/Debug/vc140.pdb
-/x64/Debug/AVL Tree.exe
-/x64/Debug/AVL Tree.ilk
-/x64/Debug/AVL Tree.pdb
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.log
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/AVL 
+Tree.lastbuildstate
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/CL.command.1.tlog
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/CL.read.1.tlog
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/CL.write.1.tlog
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/link.command.1.tlog
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/link.read.1.tlog
+/AVL 
+Tree/x64/Debug/AVL 
+Tree.tlog/link.write.1.tlog
+/AVL 
+Tree/x64/Debug/main.obj
+/AVL 
+Tree/x64/Debug/main.obj.enc
+/AVL 
+Tree/x64/Debug/vc140.idb
+/AVL 
+Tree/x64/Debug/vc140.pdb
+/x64/Debug/AVL 
+Tree.exe
+/x64/Debug/AVL 
+Tree.ilk
+/x64/Debug/AVL 
+Tree.pdb
+
+*.db
+*.opendb
